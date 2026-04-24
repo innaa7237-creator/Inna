@@ -3,7 +3,8 @@ import { repertoire, periods } from '@/data/repertoire';
 import type { Locale } from '@/i18n';
 import { Music2 } from 'lucide-react';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   return {
     title: locale === 'uk' ? 'Репертуар' : 'Repertoire',
     description:

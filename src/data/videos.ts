@@ -12,7 +12,7 @@ export interface Video {
   videoUrl?: string; // Для локальних файлів у public/video/
   thumbnail?: string;
   duration?: string;
-  category?: 'classical' | 'modern' | 'wedding' | 'event' | 'charity';
+  category?: 'classical' | 'modern' | 'wedding' | 'event' | 'charity' | 'travel';
   featured?: boolean;
 }
 

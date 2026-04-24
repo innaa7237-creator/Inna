@@ -1,5 +1,6 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import VideoHeroSection from '@/components/sections/VideoHeroSection';
 import CollaborationSection from '@/components/sections/CollaborationSection';
 
@@ -15,12 +16,14 @@ export default function HomePage() {
       {/* ─── Bio Preview ─── */}
       <section className="mt-20 flex flex-col bg-black md:flex-row">
         {/* Left: full-bleed photo — fixed height, cropped at bottom */}
-        <div className="w-full flex-shrink-0 overflow-hidden md:w-[45%]">
-          <img
+        <div className="relative w-full flex-shrink-0 overflow-hidden md:w-[45%]" style={{ height: '780px' }}>
+          <Image
             src="/images/hero/bio-portrait-full.jpg"
             alt="Inna Andrusenko"
-            className="block w-full object-cover object-top"
-            style={{ height: '780px' }}
+            fill
+            className="object-cover object-top"
+            priority
+            sizes="(max-width: 768px) 100vw, 45vw"
           />
         </div>
 

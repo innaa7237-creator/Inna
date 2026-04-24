@@ -2,7 +2,8 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { galleryImages } from '@/data/gallery';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   return {
     title: locale === 'uk' ? 'Фотогалерея | Інна Андрусенко' : 'Photo Gallery | Inna Andrusenko',
     description:
@@ -12,7 +13,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default function GalleryPage({ params: { locale } }: { params: { locale: string } }) {
+export default async function GalleryPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = useTranslations('gallery');
 
   return (
