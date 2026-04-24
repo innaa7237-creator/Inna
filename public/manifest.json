@@ -1,0 +1,20 @@
+{
+  "name": "Inna Andrusenko - Professional Violinist",
+  "short_name": "Inna Andrusenko",
+  "description": "Official website of professional violinist Inna Andrusenko",
+  "start_url": "/uk",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8b5cf6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "lang": "uk",
+  "dir": "ltr",
+  "categories": ["music", "entertainment"]
+}

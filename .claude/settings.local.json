@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:annanetrebko.com)",
+      "Bash(dir:*)",
+      "WebFetch(domain:www.anne-sophie-mutter.de)",
+      "Bash(cmd /c \"mkdir D:\\\\violin\\\\inna\\\\public\\\\video 2>nul & copy \"\"D:\\\\violin\\\\inna\\\\video\\\\Promo video _ Inna Andrusenko _ Violin 2025 .mp4\"\" \"\"D:\\\\violin\\\\inna\\\\public\\\\video\\\\promo.mp4\"\"\")",
+      "Bash(cmd /c \"dir D:\\\\violin\\\\inna\\\\public\\\\video\"\")",
+      "Bash(powershell -Command:*)",
+      "WebSearch",
+      "WebFetch(domain:lisabatiashvili.com)",
+      "Bash(Select-String 'lisabatiashvili')",
+      "Bash(powershell -NoProfile -Command \"\n[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12\n$html = \\(Invoke-WebRequest -Uri ''https://lisabatiashvili.com/'' -UserAgent ''Mozilla/5.0'' -UseBasicParsing\\).Content\n$pattern = ''href=\"\"\\(https://lisabatiashvili\\\\.com[^\"\"]*\\\\.css[^\"\"]*\\)\"\"''\n[regex]::Matches\\($html, $pattern\\) | ForEach-Object { $_.Groups[1].Value }\n\")",
+      "Bash(powershell -NoProfile -Command \"\n[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12\n$html = \\(Invoke-WebRequest -Uri ''https://lisabatiashvili.com/'' -UserAgent ''Mozilla/5.0'' -UseBasicParsing\\).Content\n# Find all CSS link hrefs\n$css = [regex]::Matches\\($html, ''href=.\\([^>]+\\\\.css[^>\"\"'''' ]*\\)''\\)\n$css | ForEach-Object { $_Groups[1].Value } | Where-Object { $_-like ''*lisabatiashvili*'' }\n\")",
+      "Bash(powershell -NoProfile -Command \"[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $r = Invoke-WebRequest -Uri ''https://lisabatiashvili.com/'' -UserAgent ''Mozilla/5.0'' -UseBasicParsing; $r.Content | Select-String -Pattern ''flourish|has-flourish|bio-blk|bronze'' | Select-Object -First 20\")",
+      "Bash(powershell -NoProfile:*)"
+    ]
+  }
+}

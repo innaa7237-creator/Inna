@@ -1,0 +1,120 @@
+{
+  "navigation": {
+    "home": "Home",
+    "biography": "Biography",
+    "videos": "Videos",
+    "repertoire": "Repertoire",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Inna Andrusenko",
+    "subtitle": "Violinist",
+    "description": "Professional violinist with years of performance experience in leading orchestras and concert halls",
+    "cta": "Contact Me",
+    "watchVideos": "Watch Performances",
+    "watchPromo": "Watch Promo 2025",
+    "yearsExperience": "years of experience",
+    "professional": "Professional Violinist"
+  },
+  "biography": {
+    "title": "Biography",
+    "education": "Education",
+    "achievements": "Achievements",
+    "experience": "Experience",
+    "readMore": "Read More"
+  },
+  "videos": {
+    "title": "Performance Videos",
+    "description": "Collection of concert performances and chamber music recordings",
+    "featured": "Featured Performances",
+    "allVideos": "All Videos"
+  },
+  "repertoire": {
+    "title": "Repertoire",
+    "description": "List of works I perform",
+    "periods": {
+      "baroque": "Baroque",
+      "classical": "Classical",
+      "romantic": "Romantic",
+      "modern": "Modern Music"
+    }
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "description": "Photos from concerts and performances",
+    "subtitle": "Moments from performances around the world",
+    "footerText": "Each photo tells a story about music that touches people's hearts across different countries and cultures",
+    "categories": {
+      "concerts": "Concerts",
+      "portraits": "Portraits",
+      "rehearsals": "Rehearsals",
+      "travel": "Travel",
+      "charity": "Charity"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "For inquiries about performances, collaborations, and bookings",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+1",
+      "subject": "Subject",
+      "subjectPlaceholder": "What would you like to inquire about?",
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message"
+    },
+    "cta": {
+      "title": "Ready to Collaborate?",
+      "description": "Contact me to discuss performances, recordings, or other musical projects",
+      "button": "Write to Me"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "social": "Follow the music",
+    "followMe": "Follow me",
+    "professional": "Professional Violinist bringing elegance and emotion to every performance worldwide.",
+    "contact": "Contact"
+  },
+  "common": {
+    "readMore": "Read More",
+    "backToHome": "Back to Home",
+    "close": "Close",
+    "loading": "Loading..."
+  },
+  "metadata": {
+    "home": {
+      "title": "Inna Andrusenko - Professional Violinist",
+      "description": "Official website of professional violinist Inna Andrusenko. Concert performances, repertoire, biography"
+    },
+    "biography": {
+      "title": "Biography",
+      "description": "Biography, education and achievements of violinist Inna Andrusenko"
+    },
+    "videos": {
+      "title": "Performance Videos",
+      "description": "Collection of concert performance videos by Inna Andrusenko"
+    },
+    "repertoire": {
+      "title": "Repertoire",
+      "description": "Repertoire of violinist Inna Andrusenko - from Baroque to contemporary music"
+    },
+    "gallery": {
+      "title": "Photo Gallery",
+      "description": "Photos from concerts and performances by Inna Andrusenko"
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contact Inna Andrusenko for performance inquiries and collaborations"
+    }
+  }
+}
